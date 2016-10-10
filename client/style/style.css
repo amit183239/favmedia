@@ -1,0 +1,2708 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  background-color: black;
+  background-image: url("images/Background.png?v=2");
+  color: rgba(255, 255, 255, 0.5);
+}
+@media print {
+  body {
+    font-family: "Trebuchet MS", sans-serif;
+  }
+}
+.clearfix {
+  clear: both;
+}
+#container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 1em;
+}
+.login-screen-container {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-bottom: 20vh;
+}
+.login-screen {
+  width: 25em;
+  margin: auto;
+  margin-top: 3em;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-radius: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #34404f;
+  background-image: url("images/LoginBG.png?v=1");
+  background: -webkit-radial-gradient(50% 23%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)), url("images/LoginBG.png?v=1");
+  background: -moz-radial-gradient(50% 23%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)), url("images/LoginBG.png?v=1");
+}
+.login-screen .logo {
+  margin-bottom: 1em;
+  -webkit-animation: heartbeat 2s infinite;
+  -moz-animation: heartbeat 2s infinite;
+  animation: heartbeat 2s infinite;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.login-screen .logo img {
+  width: 10em;
+}
+@-webkit-keyframes heartbeat {
+  5% {
+    -webkit-transform: scale(1.05);
+  }
+  10% {
+    -webkit-transform: scale(1.025);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+  }
+}
+@-moz-keyframes heartbeat {
+  5% {
+    -moz-transform: scale(1.05);
+  }
+  10% {
+    -moz-transform: scale(1.025);
+  }
+  25% {
+    -moz-transform: scale(1.1);
+  }
+}
+@keyframes heartbeat {
+  5% {
+    transform: scale(1.05);
+  }
+  10% {
+    transform: scale(1.025);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+}
+.login-screen .error {
+  color: red;
+}
+.login-screen input {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 1.2em;
+  width: 15em;
+}
+.login-screen .placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-screen ::-webkit-input-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-screen ::-moz-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-screen :-ms-input-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-screen input:-moz-placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-screen button {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: #d8c25b;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-radius: 1em;
+  margin-top: 2em;
+}
+.options-menu-container {
+  display: inline-block;
+  background-color: #34404f;
+  border-radius: 1em;
+  position: relative;
+}
+.options-menu-container .option-highlighter {
+  position: absolute;
+  line-height: 2em;
+  background-color: #6a88a4;
+  border-radius: 1em;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+}
+.options-menu-container .options {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 2em;
+}
+.options-menu-container .options li {
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s ease;
+}
+.options-menu-container .options li:hover {
+  cursor: pointer;
+}
+.show-button {
+  display: inline-block;
+  line-height: 1.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background-color: #262f3a;
+  color: rgba(255, 255, 255, 0.6);
+}
+.show-button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #4c6078;
+}
+.header-container {
+  background-color: #4c6078;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+}
+.header-container .logo {
+  float: left;
+  margin-top: 0em;
+  padding-left: 0.6em;
+  padding-top: 0.6em;
+  height: 2em;
+}
+.header-container .option-container {
+  float: right;
+}
+.header-container .option-container .options-menu-container {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-left: 1em;
+}
+.header-container .option-container .options-menu-container .focused {
+  color: white;
+}
+.header-container .option-container .show-button {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.75em;
+  background-color: #34404f;
+}
+.header-container .option-container .show-button:hover {
+  background-color: #6a88a4;
+}
+.nav-bar-two {
+  background-color: #34404f;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  font-size: 90%;
+  text-align: center;
+}
+.nav-bar-two .options-menu-container {
+  background-color: #262f3a;
+}
+.nav-bar-two .options-menu-container .options .li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar-two .options-menu-container .option-highlighter {
+  background-color: #4c6078;
+}
+.nav-bar-two .selector {
+  background-color: #262f3a;
+}
+.nav-bar-two .selector .title {
+  background-color: #4c6078;
+}
+.nav-bar-two .date-range {
+  background-color: #262f3a;
+}
+.nav-bar-two .date-range .title {
+  background-color: #4c6078;
+}
+.nav-bar-two .time-range {
+  background-color: #262f3a;
+}
+.nav-bar-two .time-range .title {
+  background-color: #4c6078;
+}
+.nav-bar-two .show-button {
+  background-color: #262f3a;
+  margin-left: 1em;
+}
+.nav-bar-two .show-button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #4c6078;
+}
+.nav-bar-three {
+  background-color: #262f3a;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  font-size: 90%;
+  text-align: center;
+}
+.nav-bar-three .options-menu-container {
+  background-color: #1d242c;
+}
+.nav-bar-three .options-menu-container .option-highlighter {
+  background-color: #34404f;
+}
+.nav-bar-three .show-button {
+  background-color: #1d242c;
+}
+.nav-bar-three .show-button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #34404f;
+}
+.selector {
+  display: inline-block;
+  background-color: #1d242c;
+  border-radius: 1em;
+  line-height: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  position: relative;
+}
+.selector .title,
+.selector .value {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.selector .title {
+  background-color: #34404f;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding-left: 1.5em;
+  line-height: 2em;
+}
+.selector .value {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.selector .has-menu {
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+}
+.selector .select {
+  font-style: italic;
+}
+.selector .no-menu {
+  cursor: default;
+}
+.selector .popup {
+  position: absolute;
+  left: 50%;
+  margin-top: 1em;
+  display: none;
+}
+.selector .popup table {
+  margin-left: -50%;
+  border-spacing: 0em;
+  border-collapse: separate;
+  background-color: #232a32;
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 0.5em;
+}
+.selector .popup table td {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 90%;
+  font-style: italic;
+}
+.selector .popup table .row-title {
+  color: white;
+  font-size: 100%;
+  font-style: normal;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  background-color: #4c6078;
+}
+.selector .popup table tr:first-of-type .row-title {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+.selector .show {
+  display: table;
+  z-index: 1;
+}
+.date-range {
+  display: inline-block;
+  background-color: #1d242c;
+  line-height: 2em;
+  border-radius: 1em;
+}
+.date-range .title {
+  display: inline-block;
+  background-color: #34404f;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+}
+.date-range .separator {
+  display: inline-block;
+  padding: 0em;
+}
+.date-range .from-date,
+.date-range .to-date {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: normal;
+}
+.date-range .from-date {
+  padding-left: 1.5em;
+}
+.date-range .to-date {
+  padding-right: 1.5em;
+}
+.date-range .inactive {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+.time-range {
+  display: inline-block;
+  background-color: #1d242c;
+  line-height: 2em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.time-range .title {
+  display: inline-block;
+  background-color: #34404f;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  line-height: 2em;
+}
+.time-range .separator {
+  display: inline-block;
+  padding: 0em;
+}
+.time-range .from-time,
+.time-range .to-time {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+}
+.time-range .from-time {
+  padding-left: 1.5em;
+}
+.time-range .to-time {
+  padding-right: 1.5em;
+}
+.time-range .inactive {
+  font-style: italic;
+}
+.duration {
+  display: inline-block;
+}
+.option-button {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.spinner img {
+  transform: translate(0, -50%);
+  width: 1.5em;
+  opacity: 0.4;
+}
+#dashboard {
+  padding-bottom: 2em;
+  text-align: center;
+}
+#dashboard .section-title {
+  background-color: #34404f;
+  display: inline-block;
+  line-height: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 1em;
+  box-shadow: 0em 0em 0.7em rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2em;
+  font-size: 90%;
+  font-weight: 700;
+}
+#dashboard .box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+}
+#dashboard .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+}
+#dashboard #todays-summary {
+  width: 75em;
+  margin: auto;
+  position: relative;
+  height: 55em;
+}
+#dashboard #todays-summary .box1 {
+  position: absolute;
+  left: 1.75%;
+  width: 31%;
+  height: 55em;
+}
+#dashboard #todays-summary .box2 {
+  position: absolute;
+  left: 34.5%;
+  width: 31%;
+  height: 55em;
+}
+#dashboard #todays-summary .box3 {
+  position: absolute;
+  left: 67.25%;
+  width: 31%;
+  height: 55em;
+}
+#dashboard #todays-summary table {
+  padding-top: 0.5em;
+  border-collapse: separate;
+  table-layout: fixed;
+  width: 100%;
+}
+#dashboard #todays-summary table td {
+  width: 0em;
+}
+#dashboard #todays-summary .energy-power {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 23em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #todays-summary .energy-power .glass-panel {
+  height: 18.8em;
+  position: relative;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  background-color: #101317;
+  margin: 1em;
+}
+#dashboard #todays-summary .energy-power .glass-panel .power {
+  height: 11em;
+  padding: 0.6em;
+}
+#dashboard #todays-summary .energy-power .glass-panel .energy {
+  height: 6.6em;
+  position: relative;
+  background-color: #A71A1A;
+  border-bottom-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+}
+#dashboard #todays-summary .energy-power .glass-panel .energy .value {
+  padding: 1em;
+  padding-bottom: 0em;
+  font-size: 1.8em;
+  text-shadow: 0em 0em 1.8em #fff;
+  color: rgba(255, 255, 255, 0.9);
+}
+#dashboard #todays-summary .energy-power .glass-panel .energy .unit {
+  padding: 0em;
+  color: #D0A6A6;
+  text-shadow: 0em 0em 1.8em #fff;
+}
+#dashboard #todays-summary .energy-power .glass-panel .cover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  box-shadow: inset 0em 0em 0.9em rgba(255, 255, 255, 0.36), 0em 0em 0.6em #000000;
+  border: 0.1em solid black;
+}
+#dashboard #todays-summary .highlights {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 22em;
+  position: relative;
+}
+#dashboard #todays-summary .highlights .units {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 90%;
+}
+#dashboard #todays-summary .highlights .data {
+  height: 9em;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row {
+  padding-bottom: 1em;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .row-title {
+  text-align: left;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 0.3em;
+  padding-left: 0.1em;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .row-title .subtitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-style: italic;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .bar-container {
+  background-color: #262f3a;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .bar-container .outer-bar {
+  background-color: #967356;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .bar-container .outer-bar .inner-bar {
+  background-color: #688F61;
+  height: 1.5em;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values {
+  font-size: 90%;
+  padding-top: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-left .value {
+  display: inline;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-left .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-right .value {
+  display: inline;
+}
+#dashboard #todays-summary .highlights .data .bar-graph .row .values .value-right .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #todays-summary .highlights .average-data {
+  font-size: 90%;
+  width: 100%;
+  height: 10em;
+}
+#dashboard #todays-summary .highlights .average-data .minimum,
+#dashboard #todays-summary .highlights .average-data .average,
+#dashboard #todays-summary .highlights .average-data .maximum {
+  display: inline-block;
+  width: 30%;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .text,
+#dashboard #todays-summary .highlights .average-data .average .text,
+#dashboard #todays-summary .highlights .average-data .maximum .text {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5em;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .value,
+#dashboard #todays-summary .highlights .average-data .average .value,
+#dashboard #todays-summary .highlights .average-data .maximum .value {
+  padding-top: 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.3em;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .date,
+#dashboard #todays-summary .highlights .average-data .average .date,
+#dashboard #todays-summary .highlights .average-data .maximum .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .outer-div,
+#dashboard #todays-summary .highlights .average-data .average .outer-div,
+#dashboard #todays-summary .highlights .average-data .maximum .outer-div {
+  height: 7em;
+  width: 90%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 1em;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .outer-div .inner-div,
+#dashboard #todays-summary .highlights .average-data .average .outer-div .inner-div,
+#dashboard #todays-summary .highlights .average-data .maximum .outer-div .inner-div {
+  width: 80%;
+  height: 5.5em;
+  border-radius: 50%;
+  margin-top: 0.75em;
+  vertical-align: middle !important;
+  display: inline-block;
+  background-color: #232A32;
+}
+#dashboard #todays-summary .highlights .average-data .minimum {
+  margin-right: 0.5em;
+}
+#dashboard #todays-summary .highlights .average-data .minimum .outer-div {
+  background-color: #963239;
+}
+#dashboard #todays-summary .highlights .average-data .average {
+  margin-right: 0.5em;
+}
+#dashboard #todays-summary .highlights .average-data .average .outer-div {
+  background-color: #AB5240;
+}
+#dashboard #todays-summary .highlights .average-data .maximum .outer-div {
+  background-color: #36692C;
+}
+#dashboard #todays-summary .top-feeder {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 17em;
+  margin-bottom: 1em;
+  position: relative;
+}
+#dashboard #todays-summary .top-feeder .data {
+  height: 14.2em;
+  position: relative;
+}
+#dashboard #todays-summary .top-feeder .data .row {
+  line-height: 2em;
+  margin-top: 0.75em;
+}
+#dashboard #todays-summary .top-feeder .data .row .title {
+  display: inline-block;
+  text-align: right;
+  font-size: 80%;
+  width: 10em;
+  padding-right: 1.5em;
+  white-space: nowrap;
+}
+#dashboard #todays-summary .top-feeder .data .row .bar {
+  display: inline-block;
+  background-color: #262F3A;
+  width: 14em;
+  font-size: 80%;
+}
+#dashboard #todays-summary .top-feeder .data .row .bar div {
+  background-color: #4C6078;
+}
+#dashboard #todays-summary .top-feeder .data .spinner {
+  width: 100%;
+  height: 100%;
+}
+#dashboard #todays-summary .top-feeder-pie {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 29em;
+  margin-bottom: 1em;
+  position: relative;
+}
+#dashboard #todays-summary .top-feeder-pie .graph {
+  height: 27em;
+}
+#dashboard #todays-summary .top-feeder-pie .graph .spinner {
+  width: 100%;
+  height: 100%;
+}
+#dashboard #todays-summary .energy-peak {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 8em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #todays-summary .energy-peak .values {
+  padding: 0em;
+  position: relative;
+}
+#dashboard #todays-summary .energy-peak .values .time {
+  width: 50%;
+  height: 5.8em;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  background-color: #4C6078;
+  border-bottom-left-radius: 0.8em;
+}
+#dashboard #todays-summary .energy-peak .values .time .hour {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#dashboard #todays-summary .energy-peak .values .energy {
+  width: 50%;
+  height: 5.8em;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  background-color: #36692C;
+  border-bottom-right-radius: 0.8em;
+}
+#dashboard #todays-summary .energy-peak .values .energy .value {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#dashboard #todays-summary .energy-peak .values .energy .unit {
+  font-size: 70%;
+  color: rgba(255, 255, 255, 0.5);
+}
+#dashboard #todays-summary .energy-peak .values .spinner {
+  height: 5.4em;
+}
+#dashboard #todays-summary .pf-metrics {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 13em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #todays-summary .pf-metrics .sub-title {
+  font-size: 80%;
+  line-height: 3em;
+}
+#dashboard #todays-summary .pf-metrics .data .row {
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
+#dashboard #todays-summary .pf-metrics .data .row .title {
+  display: inline-block;
+  text-align: right;
+  font-size: 70%;
+  width: 9em;
+  margin-right: 1.5em;
+  white-space: nowrap;
+}
+#dashboard #todays-summary .pf-metrics .data .row .bar {
+  display: inline-block;
+  background-color: #262F3A;
+  width: 13em;
+}
+#dashboard #todays-summary .pf-metrics .data .row .bar div {
+  font-size: 70%;
+  background-color: #4C6078;
+}
+#dashboard #todays-summary .pf-metrics .loss {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  line-height: 3em;
+  height: 3em;
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+#dashboard #todays-summary .pf-metrics .loss .title {
+  width: 33.33%;
+  display: inline-block;
+  background-color: #4C6078;
+  border-bottom-left-radius: 0.8em;
+  height: 3em;
+}
+#dashboard #todays-summary .pf-metrics .loss .title span {
+  font-size: 80%;
+}
+#dashboard #todays-summary .pf-metrics .loss .kwh {
+  width: 33.33%;
+  display: inline-block;
+  background-color: #B73F3F;
+  font-size: 100%;
+  height: 3em;
+}
+#dashboard #todays-summary .pf-metrics .loss .kwh .unit {
+  font-size: 70%;
+  color: rgba(255, 255, 255, 0.5);
+}
+#dashboard #todays-summary .pf-metrics .loss .rupee {
+  width: 33.34%;
+  display: inline-block;
+  background-color: #963239;
+  border-bottom-right-radius: 0.8em;
+  font-size: 100%;
+  height: 3em;
+}
+#dashboard #todays-summary .harmonics {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 25em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #todays-summary .harmonics .graph {
+  height: 23em;
+}
+#dashboard #todays-summary .energy-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 23em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #todays-summary .energy-graph .graph {
+  height: 21em;
+}
+#dashboard #monthly-summary {
+  width: 75em;
+  margin: auto;
+  position: relative;
+  margin-bottom: 1em;
+  height: 76.5em;
+}
+#dashboard #monthly-summary .box1 {
+  position: absolute;
+  left: 1.75%;
+  width: 31%;
+  height: 76.5em;
+}
+#dashboard #monthly-summary .box2 {
+  position: absolute;
+  left: 34.5%;
+  width: 31%;
+  height: 76.5em;
+}
+#dashboard #monthly-summary .box3 {
+  position: absolute;
+  left: 67.25%;
+  width: 31%;
+  height: 76.5em;
+}
+#dashboard #monthly-summary table {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0.1em;
+}
+#dashboard #monthly-summary table td,
+#dashboard #monthly-summary table th {
+  text-align: center;
+}
+#dashboard #monthly-summary .highlights {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 25em;
+  position: relative;
+}
+#dashboard #monthly-summary .highlights .units {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 85%;
+}
+#dashboard #monthly-summary .highlights .data {
+  padding-top: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row {
+  padding-top: 1.5em;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .row-title {
+  text-align: left;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 0.3em;
+  padding-left: 0.1em;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .row-title .subtitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-style: italic;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .bar-container {
+  background-color: #262f3a;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .bar-container .outer-bar {
+  background-color: #967356;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .bar-container .outer-bar .inner-bar {
+  background-color: #688F61;
+  height: 1.5em;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values {
+  font-size: 90%;
+  padding-top: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-left .value {
+  display: inline;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-left .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-right .value {
+  display: inline;
+}
+#dashboard #monthly-summary .highlights .data .bar-graph .row .values .value-right .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #monthly-summary .highlights .average-data {
+  font-size: 90%;
+  width: 100%;
+  height: 10em;
+  padding-top: 0.5em;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum,
+#dashboard #monthly-summary .highlights .average-data .average,
+#dashboard #monthly-summary .highlights .average-data .maximum {
+  display: inline-block;
+  width: 30%;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .text,
+#dashboard #monthly-summary .highlights .average-data .average .text,
+#dashboard #monthly-summary .highlights .average-data .maximum .text {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5em;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .value,
+#dashboard #monthly-summary .highlights .average-data .average .value,
+#dashboard #monthly-summary .highlights .average-data .maximum .value {
+  padding-top: 2em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.3em;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .date,
+#dashboard #monthly-summary .highlights .average-data .average .date,
+#dashboard #monthly-summary .highlights .average-data .maximum .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .outer-div,
+#dashboard #monthly-summary .highlights .average-data .average .outer-div,
+#dashboard #monthly-summary .highlights .average-data .maximum .outer-div {
+  height: 8em;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 1em;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .outer-div .inner-div,
+#dashboard #monthly-summary .highlights .average-data .average .outer-div .inner-div,
+#dashboard #monthly-summary .highlights .average-data .maximum .outer-div .inner-div {
+  width: 80%;
+  height: 6.5em;
+  border-radius: 50%;
+  margin-top: 0.75em;
+  vertical-align: middle !important;
+  display: inline-block;
+  background-color: #232A32;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum {
+  margin-right: 0.5em;
+}
+#dashboard #monthly-summary .highlights .average-data .minimum .outer-div {
+  background-color: #963239;
+}
+#dashboard #monthly-summary .highlights .average-data .average {
+  margin-right: 0.5em;
+}
+#dashboard #monthly-summary .highlights .average-data .average .outer-div {
+  background-color: #AB5240;
+}
+#dashboard #monthly-summary .highlights .average-data .maximum .outer-div {
+  background-color: #36692C;
+}
+#dashboard #monthly-summary .cost-summary {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 15em;
+  position: relative;
+}
+#dashboard #monthly-summary .cost-summary .units {
+  color: rgba(255, 255, 255, 0.4);
+}
+#dashboard #monthly-summary .cost-summary .data {
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row {
+  padding-bottom: 1em;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .row-title {
+  text-align: left;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 0.3em;
+  padding-left: 0.1em;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .row-title .subtitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-style: italic;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .bar-container {
+  background-color: #262f3a;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .bar-container .outer-bar {
+  background-color: #967356;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .bar-container .outer-bar .inner-bar {
+  background-color: #688F61;
+  height: 1.5em;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values {
+  font-size: 90%;
+  padding-top: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-left .value {
+  display: inline;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-left .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-right .value {
+  display: inline;
+}
+#dashboard #monthly-summary .cost-summary .data .bar-graph .row .values .value-right .difference {
+  display: inline;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #monthly-summary .utility-bill {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 19em;
+  position: relative;
+}
+#dashboard #monthly-summary .utility-bill .units {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 90%;
+}
+#dashboard #monthly-summary .utility-bill .data {
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row {
+  padding-top: 0.5em;
+  top: 0;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .row-title {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5em;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .row-data {
+  display: inline-block;
+  width: 50%;
+  line-height: 1.5em;
+  position: relative;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .row-data .row-value {
+  position: absolute;
+  width: 100%;
+  height: 1.875 em;
+  font-size: 80%;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .row-data .outer-bar {
+  background-color: #262f3a;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .row-data .outer-bar .inner-bar {
+  background-color: #688F61;
+  height: 1.5em;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .values {
+  font-size: 80%;
+  padding-top: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .values .value-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+#dashboard #monthly-summary .utility-bill .data .bar-graph .row .values .value-right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+#dashboard #monthly-summary .utility-bill .average-data {
+  font-size: 90%;
+  width: 100%;
+  height: 10em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum,
+#dashboard #monthly-summary .utility-bill .average-data .average,
+#dashboard #monthly-summary .utility-bill .average-data .maximum {
+  display: inline-block;
+  width: 30%;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .text,
+#dashboard #monthly-summary .utility-bill .average-data .average .text,
+#dashboard #monthly-summary .utility-bill .average-data .maximum .text {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .value,
+#dashboard #monthly-summary .utility-bill .average-data .average .value,
+#dashboard #monthly-summary .utility-bill .average-data .maximum .value {
+  padding-top: 2em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.3em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .date,
+#dashboard #monthly-summary .utility-bill .average-data .average .date,
+#dashboard #monthly-summary .utility-bill .average-data .maximum .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .outer-div,
+#dashboard #monthly-summary .utility-bill .average-data .average .outer-div,
+#dashboard #monthly-summary .utility-bill .average-data .maximum .outer-div {
+  height: 8em;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 1em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .outer-div .inner-div,
+#dashboard #monthly-summary .utility-bill .average-data .average .outer-div .inner-div,
+#dashboard #monthly-summary .utility-bill .average-data .maximum .outer-div .inner-div {
+  width: 80%;
+  height: 6.5em;
+  border-radius: 50%;
+  margin-top: 0.75em;
+  vertical-align: middle !important;
+  display: inline-block;
+  background-color: #232A32;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum {
+  margin-right: 0.5em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .minimum .outer-div {
+  background-color: #963239;
+}
+#dashboard #monthly-summary .utility-bill .average-data .average {
+  margin-right: 0.5em;
+}
+#dashboard #monthly-summary .utility-bill .average-data .average .outer-div {
+  background-color: #AB5240;
+}
+#dashboard #monthly-summary .utility-bill .average-data .maximum .outer-div {
+  background-color: #36692C;
+}
+#dashboard #monthly-summary .energy-power {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 23em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #monthly-summary .energy-power .glass-panel {
+  height: 18.8em;
+  position: relative;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  background-color: #101317;
+  margin: 1em;
+}
+#dashboard #monthly-summary .energy-power .glass-panel .power {
+  height: 11em;
+  padding: 0.6em;
+}
+#dashboard #monthly-summary .energy-power .glass-panel .energy {
+  height: 6.6em;
+  position: relative;
+  background-color: #A71A1A;
+  border-bottom-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+}
+#dashboard #monthly-summary .energy-power .glass-panel .energy .value {
+  padding: 1em;
+  padding-bottom: 0em;
+  font-size: 1.8em;
+  text-shadow: 0em 0em 1.8em #fff;
+  color: rgba(255, 255, 255, 0.9);
+}
+#dashboard #monthly-summary .energy-power .glass-panel .energy .unit {
+  padding: 0em;
+  color: #D0A6A6;
+  text-shadow: 0em 0em 1.8em #fff;
+}
+#dashboard #monthly-summary .energy-power .glass-panel .cover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  box-shadow: inset 0em 0em 0.9em rgba(255, 255, 255, 0.36), 0em 0em 0.6em #000000;
+  border: 0.1em solid black;
+}
+#dashboard #monthly-summary .top-feeder {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 30em;
+  position: relative;
+}
+#dashboard #monthly-summary .top-feeder .graph {
+  height: 28em;
+}
+#dashboard #monthly-summary .top-feeder-bar {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 26.5em;
+  position: relative;
+}
+#dashboard #monthly-summary .top-feeder-bar .data {
+  position: relative;
+}
+#dashboard #monthly-summary .top-feeder-bar .data .row {
+  line-height: 1.5em;
+  margin-top: 0.75em;
+}
+#dashboard #monthly-summary .top-feeder-bar .data .row .title {
+  display: inline-block;
+  text-align: right;
+  font-size: 80%;
+  width: 10em;
+  padding-right: 1.5em;
+  white-space: nowrap;
+}
+#dashboard #monthly-summary .top-feeder-bar .data .row .bar {
+  display: inline-block;
+  background-color: #262F3A;
+  width: 14em;
+  font-size: 80%;
+}
+#dashboard #monthly-summary .top-feeder-bar .data .row .bar div {
+  background-color: #4C6078;
+}
+#dashboard #monthly-summary .energy-peak {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 18.5em;
+  position: relative;
+}
+#dashboard #monthly-summary .energy-peak .data {
+  margin-top: 0.9em;
+}
+#dashboard #monthly-summary .energy-peak .data .row {
+  margin-top: 1em;
+  line-height: 2em;
+}
+#dashboard #monthly-summary .energy-peak .data .row .title {
+  width: 9em;
+  display: inline-block;
+  background-color: transparent;
+  text-align: right;
+  font-size: 80%;
+  margin-right: 1.5em;
+  white-space: nowrap;
+}
+#dashboard #monthly-summary .energy-peak .data .row .bar {
+  display: inline-block;
+  background-color: #262F3A;
+  width: 15em;
+  font-size: 80%;
+}
+#dashboard #monthly-summary .energy-peak .data .row div {
+  background-color: #4C6078;
+}
+#dashboard #monthly-summary .pf-metrics {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 13em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #monthly-summary .pf-metrics .sub-title {
+  font-size: 80%;
+  line-height: 3em;
+}
+#dashboard #monthly-summary .pf-metrics .data .row {
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
+#dashboard #monthly-summary .pf-metrics .data .row .title {
+  display: inline-block;
+  text-align: right;
+  font-size: 70%;
+  width: 9em;
+  margin-right: 1.5em;
+  white-space: nowrap;
+}
+#dashboard #monthly-summary .pf-metrics .data .row .bar {
+  display: inline-block;
+  background-color: #262F3A;
+  width: 13em;
+}
+#dashboard #monthly-summary .pf-metrics .data .row .bar div {
+  font-size: 70%;
+  background-color: #4C6078;
+}
+#dashboard #monthly-summary .pf-metrics .loss {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  line-height: 3em;
+  height: 3em;
+  font-size: 100%;
+}
+#dashboard #monthly-summary .pf-metrics .loss .title {
+  width: 33.33%;
+  display: inline-block;
+  background-color: #34404F;
+  border-bottom-left-radius: 0.8em;
+  height: 3em;
+}
+#dashboard #monthly-summary .pf-metrics .loss .title span {
+  font-size: 80%;
+}
+#dashboard #monthly-summary .pf-metrics .loss .kwh {
+  width: 33.33%;
+  display: inline-block;
+  background-color: #B73F3F;
+  font-size: 100%;
+  height: 3em;
+}
+#dashboard #monthly-summary .pf-metrics .loss .kwh .unit {
+  font-size: 70%;
+  color: rgba(255, 255, 255, 0.5);
+}
+#dashboard #monthly-summary .pf-metrics .loss .rupee {
+  width: 33.34%;
+  display: inline-block;
+  background-color: #963239;
+  border-bottom-right-radius: 0.8em;
+  font-size: 100%;
+  height: 3em;
+}
+#dashboard #monthly-summary .harmonics {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 1em;
+  height: 25.5em;
+  position: relative;
+}
+#dashboard #monthly-summary .harmonics .graph {
+  height: 23.5em;
+}
+#dashboard #monthly-summary .phantom-power {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 7em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #monthly-summary .phantom-power .data {
+  padding: 0em;
+  position: relative;
+}
+#dashboard #monthly-summary .phantom-power .data .energy {
+  width: 50%;
+  height: 4.8em;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  background-color: #A85B3D;
+  border-bottom-left-radius: 0.8em;
+}
+#dashboard #monthly-summary .phantom-power .data .energy .value {
+  font-weight: 300;
+  font-size: 1.6em;
+  padding-top: 0.8em;
+  color: rgba(255, 255, 255, 0.7);
+}
+#dashboard #monthly-summary .phantom-power .data .rupee {
+  width: 50%;
+  height: 4.8em;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  background-color: #963239;
+  border-bottom-right-radius: 0.8em;
+}
+#dashboard #monthly-summary .phantom-power .data .rupee .value {
+  font-weight: 300;
+  font-size: 1.4em;
+  padding-top: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+}
+#dashboard #monthly-summary .energy-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 19em;
+  position: relative;
+  margin-bottom: 1em;
+}
+#dashboard #monthly-summary .energy-graph .graph {
+  height: 15.3em;
+}
+#dashboard #production-data {
+  width: 75em;
+  margin: auto;
+}
+#dashboard #production-data .ukg-output {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  width: 31%;
+  margin-left: 1.75%;
+  margin-bottom: 1em;
+  height: 10em;
+  float: left;
+}
+#dashboard #production-data .ukg-output .data .type {
+  padding: 0.5em;
+  color: rgba(255, 255, 255, 0.7);
+}
+#dashboard #production-data .ukg-output .data .data-list .row {
+  display: inline-block;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+  font-size: 90%;
+}
+#dashboard #production-data .ukg-output .data .data-list .row .machine {
+  display: inline;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+#dashboard #production-data .ukg-output .data .data-list .row .date {
+  display: inline;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #production-data .ukg-output .data .data-list .row .value {
+  display: inline;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#dashboard #details {
+  width: 75em;
+  margin: auto;
+  position: relative;
+  height: 20em;
+}
+#dashboard #details .box1 {
+  position: absolute;
+  left: 1.75%;
+  width: 94.72%;
+  height: 20em;
+}
+#dashboard #details .box2 {
+  position: absolute;
+  left: 50.86%;
+  width: 47.36%;
+  height: 20em;
+}
+#dashboard #details .energy-usage {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 20em;
+}
+#dashboard #details .energy-usage .graph {
+  height: 18em;
+}
+#dashboard #details .plant-pf {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  height: 20em;
+}
+#dashboard #details .plant-pf .graph {
+  height: 18em;
+}
+#report {
+  padding: auto;
+  text-align: center;
+}
+#report .report-box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#report .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+}
+#report .report-content {
+  width: 75em;
+  margin: auto;
+  margin-top: 3em;
+}
+#report .energy-power-dial {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  height: 23em;
+  width: 23.25em;
+  position: relative;
+}
+#report .energy-power-dial .glass-panel {
+  height: 18.8em;
+  position: relative;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  background-color: #101317;
+  margin: 1em;
+}
+#report .energy-power-dial .glass-panel .power {
+  height: 11em;
+  padding: 0.6em;
+}
+#report .energy-power-dial .glass-panel .energy {
+  height: 6.6em;
+  position: relative;
+  background-color: #A71A1A;
+  border-bottom-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+}
+#report .energy-power-dial .glass-panel .energy .value {
+  padding: 1em;
+  padding-bottom: 0em;
+  font-size: 1.8em;
+  text-shadow: 0em 0em 1.8em #fff;
+  color: rgba(255, 255, 255, 0.9);
+}
+#report .energy-power-dial .glass-panel .energy .unit {
+  padding: 0em;
+  color: #D0A6A6;
+  text-shadow: 0em 0em 1.8em #fff;
+}
+#report .energy-power-dial .glass-panel .cover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 21.25em;
+  border-top-right-radius: 21.25em;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  box-shadow: inset 0em 0em 0.9em rgba(255, 255, 255, 0.36), 0em 0em 0.6em #000000;
+  border: 0.1em solid black;
+}
+#report .energy-pie-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  width: 49.75em;
+  height: 23em;
+  margin-left: 2em;
+  vertical-align: top;
+  position: relative;
+}
+#report .energy-pie-graph .graph {
+  height: 21em;
+  margin-top: 0em;
+}
+#report .energy-bar-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#report .top-users {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#report .current-previous-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#report .current-previous-data {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  position: relative;
+}
+#report .current-previous-data .data {
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 90%;
+}
+#report .current-previous-data .data .row:nth-child(odd) {
+  background-color: #262f3a;
+}
+#report .current-previous-data .data .row {
+  line-height: 2em;
+}
+#report .current-previous-data .data .row .units {
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.3);
+}
+#report .current-previous-data .data .row .title {
+  width: 20em;
+  display: inline-block;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.3);
+}
+#report .current-previous-data .data .row .value {
+  width: 15em;
+  display: inline-block;
+  text-align: left;
+  padding-left: 2em;
+}
+#report .energy-usage-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#report .energy-usage-data {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  margin-right: 2em;
+  vertical-align: top;
+  position: relative;
+  width: 25em;
+}
+#report .energy-usage-data .data table {
+  margin: auto;
+  margin-bottom: 1em;
+  font-size: 90%;
+  width: 100%;
+}
+#report .energy-usage-data .data table tr:nth-child(odd) td {
+  background-color: #262f3a;
+}
+#report .energy-usage-data .data table th {
+  line-height: 3em;
+  font-weight: normal;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#report .energy-usage-data .data table th:nth-child(odd) {
+  text-align: right;
+  padding-right: 2em;
+}
+#report .energy-usage-data .data table td {
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#report .energy-usage-data .data table td:nth-child(odd) {
+  padding-left: 2em;
+  text-align: right;
+}
+#report .energy-usage-data .average-data {
+  font-size: 90%;
+  width: 100%;
+  height: 10em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+#report .energy-usage-data .average-data .units {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 90%;
+}
+#report .energy-usage-data .average-data .minimum,
+#report .energy-usage-data .average-data .average,
+#report .energy-usage-data .average-data .maximum {
+  display: inline-block;
+  width: 30%;
+}
+#report .energy-usage-data .average-data .minimum .text,
+#report .energy-usage-data .average-data .average .text,
+#report .energy-usage-data .average-data .maximum .text {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5em;
+}
+#report .energy-usage-data .average-data .minimum .value,
+#report .energy-usage-data .average-data .average .value,
+#report .energy-usage-data .average-data .maximum .value {
+  padding-top: 2em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0.3em;
+}
+#report .energy-usage-data .average-data .minimum .date,
+#report .energy-usage-data .average-data .average .date,
+#report .energy-usage-data .average-data .maximum .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+#report .energy-usage-data .average-data .minimum .outer-div,
+#report .energy-usage-data .average-data .average .outer-div,
+#report .energy-usage-data .average-data .maximum .outer-div {
+  height: 8em;
+  border-radius: 50%;
+  margin: auto;
+}
+#report .energy-usage-data .average-data .minimum .outer-div .inner-div,
+#report .energy-usage-data .average-data .average .outer-div .inner-div,
+#report .energy-usage-data .average-data .maximum .outer-div .inner-div {
+  width: 80%;
+  height: 6.5em;
+  border-radius: 50%;
+  margin-top: 0.75em;
+  vertical-align: middle !important;
+  display: inline-block;
+  background-color: #232A32;
+}
+#report .energy-usage-data .average-data .minimum {
+  margin-right: 0.5em;
+}
+#report .energy-usage-data .average-data .minimum .outer-div {
+  background-color: #963239;
+}
+#report .energy-usage-data .average-data .average {
+  margin-right: 0.5em;
+}
+#report .energy-usage-data .average-data .average .outer-div {
+  background-color: #AB5240;
+}
+#report .energy-usage-data .average-data .maximum .outer-div {
+  background-color: #36692C;
+}
+#report .energy-level {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  min-width: 15em;
+  margin-left: 2em;
+  vertical-align: top;
+  position: relative;
+  min-height: 10em;
+}
+#report .energy-level .data table {
+  margin: auto;
+  margin-bottom: 1em;
+  font-size: 90%;
+}
+#report .energy-level .data table tr:nth-child(odd) td {
+  background-color: #262f3a;
+}
+#report .energy-level .data table th {
+  line-height: 3em;
+  font-weight: normal;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#report .energy-level .data table td {
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#report .energy-composite {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#energy-balance {
+  text-align: center;
+  margin: auto;
+}
+#energy-balance .box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#energy-balance .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+  text-align: center;
+}
+#energy-balance .energy-balance-list {
+  margin: 2em;
+  display: inline-block;
+}
+#energy-balance .energy-balance-list .energy-balance-data {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#energy-balance .energy-balance-list .energy-balance-data .data {
+  padding-top: 2em;
+}
+#energy-balance table {
+  border-collapse: separate;
+}
+#energy-balance table .odd-row {
+  background-color: #262f3a;
+}
+#energy-balance table th {
+  text-align: center;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#energy-balance table td {
+  vertical-align: top;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 1em;
+}
+#machine-level .box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#machine-level .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+  text-align: center;
+}
+#machine-level input {
+  color: black;
+}
+#machine-level textarea {
+  font-Weight: bold;
+  color: black;
+  width: 90%;
+  height: 30em;
+}
+#machine-level table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+#machine-level table td,
+#machine-level table th {
+  text-align: center;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#machine-level .graph .ukg-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  margin: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#machine-level .graph .ukg-graph .spinner {
+  left: 50%;
+}
+#machine-level .graph .kwh-graph {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  margin: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#machine-level .graph .kwh-graph .spinner {
+  left: 50%;
+}
+#machine-level .machine-level-data {
+  text-align: center;
+}
+#machine-level .machine-level-data .data-view {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  margin: 2em;
+}
+#machine-level .machine-level-data .data-view .data {
+  padding: 1em;
+}
+#machine-level .machine-level-data .data-input {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  display: inline-block;
+  margin: 2em;
+}
+#machine-level .machine-level-data .data-input .data {
+  width: 50em;
+  padding-bottom: 2em;
+}
+#machine-level .machine-level-data .data-input .data .buttons input {
+  margin: 1em;
+}
+#multi-function .box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin: 2em;
+}
+#multi-function .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+  text-align: center;
+}
+#multi-function .by-parameter {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#multi-function .by-parameter .spinner {
+  left: 50%;
+}
+#multi-function .by-meter {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin: 2em;
+  position: relative;
+  min-height: 30em;
+}
+#multi-function .by-meter .spinner {
+  left: 50%;
+}
+#profile {
+  margin-top: 0em;
+  text-align: center;
+}
+#profile .box-size {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#profile .box-title {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #34404f;
+  line-height: 2.75em;
+  font-size: 80%;
+  text-align: center;
+}
+#profile table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+#profile table td,
+#profile table th {
+  text-align: center;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#profile .utility {
+  display: inline-block;
+  margin: auto;
+}
+#profile .utility .utility-data-input {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  width: 25em;
+  margin: 2em;
+}
+#profile .utility .utility-data-input .data .buttons input {
+  margin: 1em;
+  color: black;
+}
+#profile .utility .utility-data-input .data .input-data {
+  padding: 1em;
+}
+#profile .utility .utility-data-input .data .input-data textarea {
+  font-Weight: bold;
+  color: black;
+  width: 90%;
+  height: 20em;
+}
+#profile .utility .utility-data-view {
+  text-align: center;
+}
+#profile .utility .utility-data-view .data {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  margin: 2em;
+  width: 25em;
+}
+#profile .utility .utility-data-view .data input {
+  color: black;
+  margin: 1em;
+}
+#profile .meters-list {
+  display: inline-block;
+  margin: 2em;
+}
+#profile .meters-list .title {
+  text-align: center;
+}
+#profile .meters-list .meter-status {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#profile .meters-list .meter-status .data {
+  padding: 1em;
+}
+#profile .meters-list .meter-status .data .indicator {
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background-color: gray;
+  font-size: 75%;
+}
+#profile .meters-list .meter-status .data .live {
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background-color: gray;
+  font-size: 75%;
+  background-color: #0fb700;
+}
+#profile .meters-list .meter-status .data .dead {
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background-color: gray;
+  font-size: 75%;
+  background-color: #e13f3f;
+}
+#profile .hierarchy-list {
+  display: inline-block;
+  margin: 2em;
+}
+#profile .hierarchy-list .hierarchy-level {
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#profile .hierarchy-list .hierarchy-level .data {
+  padding: 0.1em;
+}
+#profile .global-info {
+  display: inline-block;
+  margin: 2em;
+}
+#profile .global-info input {
+  color: black;
+}
+#profile .global-info .global-info-input {
+  margin: 1em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#profile .global-info .global-info-data {
+  margin: 1em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  width: 25em;
+}
+#profile .global-info .global-info-data .data {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+#profile .change-password {
+  display: inline-block;
+  margin: 1em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.8);
+  background-color: #232A32;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+}
+#profile .change-password input {
+  color: black;
+}
+#profile .change-password .error-message {
+  text-align: center;
+  color: rgba(202, 23, 23, 0.84);
+}

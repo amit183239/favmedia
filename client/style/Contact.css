@@ -1,0 +1,29 @@
+div .content_contact{
+  background: #fff;
+  margin: 0 auto;
+ 
+  height: auto;
+  /*padding: 5px;*/
+  
+  /*text-align: center;*/
+  /* border-radius */
+/*  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 15px;*/
+  /* box-shadow */
+
+  box-shadow:3px 2px 15px #2261BF;
+}
+
+.content-headquarters td{
+	width:50%;
+}
+
+.content-client td{
+	width:50%;
+}
+
+
+.Table th, .table td { 
+    border-top: none !important; 
+}

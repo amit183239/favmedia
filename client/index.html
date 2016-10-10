@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Favorable Media</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css' />
+
+   
+    <link rel="stylesheet" type="text/css" href="/style/Header.css" />
+    <link rel="stylesheet" type="text/css" href="/style/Main.css" />
+    <link rel="stylesheet" type="text/css" href="/style/Contact.css" />
+    <link rel="stylesheet" type="text/css" href="/style/Service.css" />
+    <link rel="stylesheet" type="text/css" href="/style/About.css" />
+    <link rel="stylesheet" type="text/css" href="/style/Favorable.css" />
+
+    <script src="/bower_components/requirejs/require.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    
+
+    <script type="text/javascript">
+         if(typeof window.orientation !== 'undefined')
+         {
+          alert("here");
+         }
+
+        require.config({
+          paths: {
+            "react": "/bower_components/react/react",
+            "JSXTransformer": "/bower_components/react/JSXTransformer",
+            "jsx": "/bower_components/jsx-requirejs-plugin/js/jsx",
+            "text": "/bower_components/requirejs-text/text",
+
+            "jquery": "/bower_components/jquery/dist/jquery.min",
+            "bootstrap":"/bower_components/react-bootstrap/react-bootstrap",
+            /*"router-bootstrap":"/bower_components/react-router-bootstrap/lib/ReactRouterBootstrap",*/
+          },
+
+          /*shim : {
+            "react": {
+              "exports": "React"
+            },
+            "JSXTransformer": "JSXTransformer"
+          },*/
+
+          /*config: {
+            jsx: {
+              fileExtension: ".jsx",
+              transformOptions: {
+                harmony: true,
+                stripTypes: false,
+                inlineSourceMap: true
+              },
+              usePragma: false
+            }
+          }*/
+        });
+
+        /*require(['jsx!app'], function(App){
+
+          var app = new App();
+          app.init();
+
+        });*/
+        require(["jsx!scripts/main"], function (main){
+            main.initialize();
+        });
+    </script>
+
+
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
